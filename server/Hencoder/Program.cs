@@ -1,11 +1,9 @@
 using Hencoder.Services;
 using Hencoder.Services.QdrantServices;
 using Hencoder.Services.RecomendationSystem;
-using System.Diagnostics;
 using System.Net;
 using System.Text;
 using ZeroLevel;
-using static System.Net.WebRequestMethods;
 
 namespace Hencoder
 {
@@ -17,12 +15,7 @@ namespace Hencoder
 
             Log.AddConsoleLogger(ZeroLevel.Logging.LogLevel.FullDebug);
 
-            // Start qdrant
-            /*Process qdrantProcess = new Process();
-            qdrantProcess.StartInfo.FileName = "binary/qdrant.exe";
-            qdrantProcess.Start();*/
-
-            var qdrantRepository = new QdrantRepository("http://localhost:6334", "video");
+            var qdrantRepository = new QdrantRepository("video");
             await qdrantRepository.Fill();            
 
             var builder = WebApplication.CreateBuilder(args);

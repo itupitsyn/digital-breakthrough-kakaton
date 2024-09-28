@@ -1,22 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\",
+  "WorkspaceRootPath": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +22,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QdrantProxy.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:19:05.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QdrantRepository.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:18:17.104Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
@@ -35,53 +57,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "RecSys.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAADgv4QAAAB7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T20:21:42.02Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Program.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Program.cs",
               "RelativeDocumentMoniker": "Hencoder\\Program.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Program.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Program.cs",
               "RelativeToolTip": "Hencoder\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T20:08:34.748Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QdrantRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwFoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T20:07:19.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QdrantProxy.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:59:43.628Z",
+              "WhenOpened": "2024-09-28T22:18:03.753Z",
               "EditorCaption": ""
             }
           ]

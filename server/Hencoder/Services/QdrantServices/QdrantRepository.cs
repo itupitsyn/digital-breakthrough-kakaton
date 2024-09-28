@@ -22,14 +22,12 @@ namespace Hencoder.Services.QdrantServices
     public sealed class QdrantRepository
         : BaseSqliteDB<vectors>
     {
-        private readonly string _collectionName;
-        private readonly string _connectionString;
         private const int VECTOR_SIZE = 312;
-        public QdrantRepository(string connectionString, string collectionName)
+        private readonly QdrantProxy _qdrantProxy;
+        public QdrantRepository(string collectionName)
             : base("video_emb")
         {
-            _connectionString = connectionString;
-            _collectionName = collectionName;
+            _qdrantProxy = new QdrantProxy(collectionName);
         }
 
         public async Task<QdrantFillResult> Fill()
@@ -38,51 +36,49 @@ namespace Hencoder.Services.QdrantServices
             long total = 0;
             ulong prevRecordsCount;
             ulong currentRecordsCount;
-            using (var proxy = new QdrantProxy(_collectionName))
+            currentRecordsCount = prevRecordsCount = await _qdrantProxy.GetCollectionPointsCount();
+            if (prevRecordsCount < 1000000)
             {
-                currentRecordsCount = prevRecordsCount = await proxy.GetCollectionPointsCount();
-                if (prevRecordsCount < 1000000)
+                currentRecordsCount = 0;
+                await _qdrantProxy.DeleteCollection();
+                // 1. Создание коллекции
+                try
                 {
-                    currentRecordsCount = 0;
-                    await proxy.DeleteCollection();
-                    // 1. Создание коллекции
-                    try
+                    await _qdrantProxy.CreateCollection(Distance.Cosine, VECTOR_SIZE);
+                }
+                catch (Exception ex)
+                {
+                    Console.Write($"[QdrantRepository.Fill] Fault create collection. {ex.Message}");
+                    return new QdrantFillResult(0, 0, 0, QdrantResult.QdrantFailure);
+                }
+                try
+                {
+                    // 2. Заполнение коллекции
+                    var count = Count();
+                    using (var processor = new BatchProcessor<QPoint>(1000, async points => await proxy.Upsert(points)))
                     {
-                        await proxy.CreateCollection(Distance.Cosine, VECTOR_SIZE);
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.Write($"[QdrantRepository.Fill] Fault create collection. {ex.Message}");
-                        return new QdrantFillResult(0, 0, 0, QdrantResult.QdrantFailure);
-                    }
-                    try
-                    {
-                        // 2. Заполнение коллекции
-                        var count = Count();
-                        using (var processor = new BatchProcessor<QPoint>(1000, async points => await proxy.Upsert(points)))
+                        foreach (var record in SelectAll())
                         {
-                            foreach (var record in SelectAll())
+                            var embedding = new float[312];
+                            for (int i = 0; i < embedding.Length; i++)
                             {
-                                var embedding = new float[312];
-                                for (int i = 0; i < embedding.Length; i++)
-                                {
-                                    embedding[i] = BitConverter.ToSingle(record.vector, i * 4);
-                                }
-                                total++;
-                                if (total % 5000 == 0)
-                                {
-                                    Log.Info($"[Qdrant.Fill] Proceed {total} / {count}");
-                                }
-                                processor.Add(new QPoint { Id = (ulong)record.video_id, Vector = embedding });
+                                embedding[i] = BitConverter.ToSingle(record.vector, i * 4);
                             }
+                            total++;
+                            if (total % 5000 == 0)
+                            {
+                                Log.Info($"[Qdrant.Fill] Proceed {total} / {count}");
+                            }
+                            processor.Add(new QPoint { Id = (ulong)record.video_id, Vector = embedding });
                         }
                     }
-                    catch (Exception ex)
-                    {
-                        return new QdrantFillResult(0, 0, 0, QdrantResult.DataFailure);
-                    }
-                    currentRecordsCount = await proxy.GetCollectionPointsCount();
                 }
+                catch (Exception ex)
+                {
+                    Console.Write($"[QdrantRepository.Fill] Fault fill collection. {ex.Message}");
+                    return new QdrantFillResult(0, 0, 0, QdrantResult.DataFailure);
+                }
+                currentRecordsCount = await _qdrantProxy.GetCollectionPointsCount();
             }
 
             return new QdrantFillResult(prevRecordsCount, currentRecordsCount, total, QdrantResult.Success);
@@ -90,10 +86,7 @@ namespace Hencoder.Services.QdrantServices
 
         public Task<IEnumerable<long>> Recommend(ulong N, float scoreThreshold, IEnumerable<long> positivePoints, IEnumerable<long> negativePoints, IEnumerable<long> notAllowedPoints = null)
         {
-            using (var proxy = new QdrantProxy(_collectionName))
-            {
-                return proxy.Recommend(N, scoreThreshold, positivePoints, negativePoints, notAllowedPoints);
-            }
+            return _qdrantProxy.Recommend(N, scoreThreshold, positivePoints, negativePoints, notAllowedPoints);
         }
 
         protected override void DisposeStorageData()

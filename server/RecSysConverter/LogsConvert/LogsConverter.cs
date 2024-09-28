@@ -24,7 +24,7 @@ namespace RecSysConverter.LogsConvert
             string[] city = null;
             string[] user_id = null;
 
-            using (var insertProcessor = new BatchProcessor<LogEntry>(1000, records => _logs.Append(records)))
+            using (var insertProcessor = new BatchProcessor<LogEntry>(200000, records => _logs.Append(records)))
             {
                 foreach (var file in Directory.EnumerateFiles(baseFolder).Where(f => Path.GetFileName(f).StartsWith("logs")))
                 {

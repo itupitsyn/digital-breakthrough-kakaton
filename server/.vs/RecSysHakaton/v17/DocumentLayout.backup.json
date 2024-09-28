@@ -1,21 +1,41 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\",
+  "WorkspaceRootPath": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\recsysconverter\\trainset\\trainsetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|solutionrelative:recsysconverter\\trainset\\trainsetbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\recsysconverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|solutionrelative:recsysconverter\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\recsysconverter\\basesqlitedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|solutionrelative:recsysconverter\\basesqlitedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\recsysconverter\\videostatsconvert\\videostatconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|solutionrelative:recsysconverter\\videostatsconvert\\videostatconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\recsysconverter\\logsconvert\\logsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|solutionrelative:recsysconverter\\logsconvert\\logsconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,52 +54,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RecSys.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "ViewState": "AgIAAG0AAAAAAAAAAADgv4QAAAB7AAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "BaseSqliteDB.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\BaseSqliteDB.cs",
+              "RelativeDocumentMoniker": "RecSysConverter\\BaseSqliteDB.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\BaseSqliteDB.cs",
+              "RelativeToolTip": "RecSysConverter\\BaseSqliteDB.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T20:21:42.02Z",
+              "WhenOpened": "2024-09-28T21:35:13.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Program.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Program.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Program.cs",
-              "RelativeToolTip": "Hencoder\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TrainSetBuilder.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\TrainSet\\TrainSetBuilder.cs",
+              "RelativeDocumentMoniker": "RecSysConverter\\TrainSet\\TrainSetBuilder.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\TrainSet\\TrainSetBuilder.cs",
+              "RelativeToolTip": "RecSysConverter\\TrainSet\\TrainSetBuilder.cs",
+              "ViewState": "AgIAAJoAAAAAAAAAAAAgwL4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T20:08:34.748Z",
+              "WhenOpened": "2024-09-28T21:12:47.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VideoStatConverter.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
+              "RelativeDocumentMoniker": "RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
+              "RelativeToolTip": "RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:12:37.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LogsConverter.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\LogsConvert\\LogsConverter.cs",
+              "RelativeDocumentMoniker": "RecSysConverter\\LogsConvert\\LogsConverter.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\LogsConvert\\LogsConverter.cs",
+              "RelativeToolTip": "RecSysConverter\\LogsConvert\\LogsConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:11:27.618Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\Program.cs",
+              "RelativeDocumentMoniker": "RecSysConverter\\Program.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\Program.cs",
+              "RelativeToolTip": "RecSysConverter\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:11:24.798Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RecSys.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAADgv4QAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T20:21:42.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Program.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Program.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Program.cs",
+              "RelativeToolTip": "Hencoder\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T20:08:34.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "QdrantRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
               "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAmwFoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T20:07:19.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T20:07:19.73Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "QdrantProxy.cs",
-              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
               "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAcwE0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-28T19:59:43.628Z",
               "EditorCaption": ""
