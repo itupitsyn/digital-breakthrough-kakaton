@@ -3,7 +3,7 @@ import { faker } from "@faker-js/faker";
 
 export const getRandomVideos = (count: number) => {
   const data: Video[] = [];
-  const states: ("like" | "dislike")[] = ["like", "dislike"];
+  const states: ("like" | "dislike" | "skip")[] = ["like", "dislike", "skip"];
   for (let i = 0; i < count; i += 1) {
     const randomObj: Video = {
       video_id: faker.number.int(),
@@ -15,7 +15,7 @@ export const getRandomVideos = (count: number) => {
       v_likes: faker.number.int(),
       v_dislikes: faker.number.int(),
       v_duration: faker.number.int({ max: 36000 }),
-      state: states[Math.floor(Math.random() * 2)],
+      state: states[Math.floor(Math.random() * states.length)],
     };
 
     data.push(randomObj);

@@ -5,7 +5,7 @@ export type Video = {
   category: string;
   v_pub_datetime: number;
   preview?: string;
-  state?: "like" | "dislike";
+  state?: "like" | "dislike" | "skip";
   v_likes: number;
   v_dislikes: number;
   v_duration: number;

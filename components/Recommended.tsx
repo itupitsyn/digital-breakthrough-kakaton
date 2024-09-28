@@ -5,21 +5,31 @@ import { FC } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { VideoCard } from "./VideoCard";
 import { A11y, Navigation, Pagination } from "swiper/modules";
+import { Button } from "flowbite-react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { Button } from "flowbite-react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { useRouter } from "next/navigation";
 
 interface RecommendedProps {
   videos: Video[];
 }
 
 export const Recommended: FC<RecommendedProps> = ({ videos }) => {
+  const { refresh } = useRouter();
+
   return (
     <div className="relative">
-      <div className="mb-2 text-xl font-medium">Рекомендации</div>
+      <div className="flex items-center justify-between gap-4">
+        <h2 className="mb-2 text-xl font-medium">Рекомендации</h2>
+
+        <Button type="button" onClick={refresh}>
+          Обновить
+        </Button>
+      </div>
       <Swiper
         className="!pb-9"
         modules={[Navigation, Pagination, A11y]}

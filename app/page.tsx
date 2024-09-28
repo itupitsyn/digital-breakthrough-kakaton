@@ -1,7 +1,7 @@
 "use server";
 
 import { Recommended } from "@/components/Recommended";
-import { VideoGrid } from "@/components/VideoGrid";
+// import { VideoGrid } from "@/components/VideoGrid";
 import { TOKEN_API_HEADER, TOKEN_COOKIES } from "@/constants/token";
 import { Video } from "@/model/video";
 import axios from "axios";
@@ -15,15 +15,15 @@ export default async function Home() {
   let recVideos: Video[] | undefined;
   if (token) {
     try {
-      const recommendedResponse = await axios.get<Video[]>(`${process.env.API_URL}/recsys/next`, {
+      const recommendedResponse = await axios.post<Video[]>(`${process.env.API_URL}/recsys/next`, undefined, {
         headers: {
           [TOKEN_API_HEADER]: token.value,
         },
       });
       recVideos = recommendedResponse.data;
       isOk = true;
-    } catch {
-      ///
+    } catch (e) {
+      console.log(e);
     }
   }
 

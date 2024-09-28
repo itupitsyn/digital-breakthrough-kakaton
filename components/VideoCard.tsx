@@ -2,11 +2,14 @@
 
 import { Video } from "@/model/video";
 import { beautifyDuration } from "@/utils/number";
+import axios from "axios";
 import { Card } from "flowbite-react";
 import Image from "next/image";
-import { FC, useState } from "react";
+import { FC, useCallback, useState } from "react";
+import toast from "react-hot-toast";
 import { BiArrowToRight, BiImage } from "react-icons/bi";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
+import { PiArrowFatLinesRightFill, PiArrowFatLinesRightLight } from "react-icons/pi";
 import { TbPoo, TbPooFilled } from "react-icons/tb";
 
 interface VideoCardProps {
@@ -15,6 +18,34 @@ interface VideoCardProps {
 
 export const VideoCard: FC<VideoCardProps> = ({ video }) => {
   const [previewError, setPreviewError] = useState(false);
+  const [videoState, setVideoState] = useState(video.state);
+
+  const onLike = useCallback(async () => {
+    try {
+      await axios.post(`/api/videos/${video.video_id}/like`);
+      setVideoState("like");
+    } catch {
+      toast.error("Незивестная ошибка =(", { position: "bottom-center" });
+    }
+  }, [video.video_id]);
+
+  const onDisike = useCallback(async () => {
+    try {
+      await axios.post(`/api/videos/${video.video_id}/dislike`);
+      setVideoState("dislike");
+    } catch {
+      toast.error("Незивестная ошибка =(", { position: "bottom-center" });
+    }
+  }, [video.video_id]);
+
+  const onSkip = useCallback(async () => {
+    try {
+      await axios.post(`/api/videos/${video.video_id}/skip`);
+      setVideoState("skip");
+    } catch {
+      toast.error("Незивестная ошибка =(", { position: "bottom-center" });
+    }
+  }, [video.video_id]);
 
   return (
     <Card
@@ -58,18 +89,22 @@ export const VideoCard: FC<VideoCardProps> = ({ video }) => {
 
           <div className="grid grid-cols-3 place-items-center gap-x-2 text-cyan-500">
             <div>
-              <button type="button" aria-label="like" title="like">
+              <button type="button" aria-label="like" title="like" onClick={onLike}>
                 {video.state === "like" ? <IoMdHeart className="size-6" /> : <IoMdHeartEmpty className="size-6" />}
               </button>
             </div>
             <div>
-              <button type="button" aria-label="dislike" title="dislike">
+              <button type="button" aria-label="dislike" title="dislike" onClick={onDisike}>
                 {video.state === "dislike" ? <TbPooFilled className="size-6" /> : <TbPoo className="size-6" />}
               </button>
             </div>
             <div>
-              <button type="button" aria-label="skip" title="skip">
-                <BiArrowToRight className="size-6" />
+              <button type="button" aria-label="skip" title="skip" onClick={onSkip}>
+                {video.state === "skip" ? (
+                  <PiArrowFatLinesRightFill className="size-6" />
+                ) : (
+                  <PiArrowFatLinesRightLight className="size-6" />
+                )}
               </button>
             </div>
             <div className="text-xs">{video.v_likes.toLocaleString("ru-RU", { notation: "compact" })}</div>

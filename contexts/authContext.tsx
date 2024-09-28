@@ -2,6 +2,7 @@ import { TOKEN_COOKIES } from "@/constants/token";
 import { Auth } from "@/model/auth";
 import axios from "axios";
 import { useCookies } from "next-client-cookies";
+import { useRouter } from "next/navigation";
 import { createContext, FC, PropsWithChildren, useCallback, useContext, useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
@@ -18,18 +19,20 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
   const [isAuth, setIsAuth] = useState(false);
   const [token, setToken] = useState<string>();
   const [isAuthenticating, setIsAuthentiacting] = useState(false);
+  const { refresh } = useRouter();
   const cookies = useCookies();
 
   const auth = useCallback(async () => {
     try {
       setIsAuthentiacting(true);
-      const response = await axios.post<Auth>(`${process.env.NEXT_PUBLIC_API_URL}/auth`);
+      const response = await axios.post<Auth>("/api/auth");
       setIsAuth(true);
       setToken(response.data.token);
       cookies.set(TOKEN_COOKIES, response.data.token, {
         expires: 365,
       });
       toast.success("Успех!", { position: "bottom-center" });
+      refresh();
     } catch {
       setIsAuth(false);
       setToken(undefined);
@@ -38,7 +41,7 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
     } finally {
       setIsAuthentiacting(false);
     }
-  }, [cookies]);
+  }, [cookies, refresh]);
 
   useEffect(() => {
     const res = cookies.get(TOKEN_COOKIES);

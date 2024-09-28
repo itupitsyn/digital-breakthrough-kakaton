@@ -5,10 +5,10 @@ import { Button } from "flowbite-react";
 import { FC } from "react";
 
 export const LoginButton: FC = () => {
-  const { isAuth, auth, isAuthenticating } = useAuth();
+  const { isAuth, auth, token, isAuthenticating } = useAuth();
 
   return (
-    <Button type="button" onClick={auth} isProcessing={isAuthenticating} disabled={isAuthenticating}>
+    <Button type="button" onClick={auth} isProcessing={isAuthenticating} disabled={isAuthenticating} title={token}>
       {!isAuth ? "Войти" : "Перевойти"}
     </Button>
   );
