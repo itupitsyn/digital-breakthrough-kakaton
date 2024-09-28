@@ -7,7 +7,7 @@ import { Card } from "flowbite-react";
 import Image from "next/image";
 import { FC, useCallback, useState } from "react";
 import toast from "react-hot-toast";
-import { BiArrowToRight, BiImage } from "react-icons/bi";
+import { BiImage } from "react-icons/bi";
 import { IoMdHeart, IoMdHeartEmpty } from "react-icons/io";
 import { PiArrowFatLinesRightFill, PiArrowFatLinesRightLight } from "react-icons/pi";
 import { TbPoo, TbPooFilled } from "react-icons/tb";
@@ -19,33 +19,62 @@ interface VideoCardProps {
 export const VideoCard: FC<VideoCardProps> = ({ video }) => {
   const [previewError, setPreviewError] = useState(false);
   const [videoState, setVideoState] = useState(video.state);
+  const [stat, setStat] = useState({ likes: video.v_likes, dislikes: video.v_dislikes });
+  const [isLoading, setIsLoading] = useState(false);
 
   const onLike = useCallback(async () => {
     try {
+      setIsLoading(true);
       await axios.post(`/api/videos/${video.video_id}/like`);
+
+      setStat((prev) => {
+        if (videoState === "like") return prev;
+        else if (videoState === "dislike") return { likes: prev.likes + 1, dislikes: prev.dislikes - 1 };
+        return { likes: prev.likes + 1, dislikes: prev.dislikes };
+      });
       setVideoState("like");
     } catch {
       toast.error("Незивестная ошибка =(", { position: "bottom-center" });
+    } finally {
+      setIsLoading(false);
     }
-  }, [video.video_id]);
+  }, [video.video_id, videoState]);
 
   const onDisike = useCallback(async () => {
     try {
+      setIsLoading(true);
       await axios.post(`/api/videos/${video.video_id}/dislike`);
+
+      setStat((prev) => {
+        if (videoState === "dislike") return prev;
+        else if (videoState === "like") return { likes: prev.likes - 1, dislikes: prev.dislikes + 1 };
+        return { likes: prev.likes, dislikes: prev.dislikes + 1 };
+      });
       setVideoState("dislike");
     } catch {
       toast.error("Незивестная ошибка =(", { position: "bottom-center" });
+    } finally {
+      setIsLoading(false);
     }
-  }, [video.video_id]);
+  }, [video.video_id, videoState]);
 
   const onSkip = useCallback(async () => {
     try {
+      setIsLoading(true);
       await axios.post(`/api/videos/${video.video_id}/skip`);
+
+      setStat((prev) => {
+        if (videoState === "skip") return prev;
+        else if (videoState === "like") return { likes: prev.likes - 1, dislikes: prev.dislikes };
+        return { likes: prev.likes, dislikes: prev.dislikes - 1 };
+      });
       setVideoState("skip");
     } catch {
       toast.error("Незивестная ошибка =(", { position: "bottom-center" });
+    } finally {
+      setIsLoading(false);
     }
-  }, [video.video_id]);
+  }, [video.video_id, videoState]);
 
   return (
     <Card
@@ -76,7 +105,7 @@ export const VideoCard: FC<VideoCardProps> = ({ video }) => {
         <h5 className="truncate font-medium tracking-tight" title={video.title}>
           {video.title}
         </h5>
-        <div className="line-clamp-3 whitespace-pre-wrap text-sm" title={video.description}>
+        <div className="line-clamp-3 grow whitespace-pre-wrap text-sm" title={video.description}>
           {video.description}
         </div>
         <div className="flex items-end justify-between gap-4 overflow-hidden">
@@ -89,26 +118,26 @@ export const VideoCard: FC<VideoCardProps> = ({ video }) => {
 
           <div className="grid grid-cols-3 place-items-center gap-x-2 text-cyan-500">
             <div>
-              <button type="button" aria-label="like" title="like" onClick={onLike}>
-                {video.state === "like" ? <IoMdHeart className="size-6" /> : <IoMdHeartEmpty className="size-6" />}
+              <button type="button" aria-label="like" title="like" onClick={onLike} disabled={isLoading}>
+                {videoState === "like" ? <IoMdHeart className="size-6" /> : <IoMdHeartEmpty className="size-6" />}
               </button>
             </div>
             <div>
-              <button type="button" aria-label="dislike" title="dislike" onClick={onDisike}>
-                {video.state === "dislike" ? <TbPooFilled className="size-6" /> : <TbPoo className="size-6" />}
+              <button type="button" aria-label="dislike" title="dislike" onClick={onDisike} disabled={isLoading}>
+                {videoState === "dislike" ? <TbPooFilled className="size-6" /> : <TbPoo className="size-6" />}
               </button>
             </div>
             <div>
-              <button type="button" aria-label="skip" title="skip" onClick={onSkip}>
-                {video.state === "skip" ? (
+              <button type="button" aria-label="skip" title="skip" onClick={onSkip} disabled={isLoading}>
+                {videoState === "skip" ? (
                   <PiArrowFatLinesRightFill className="size-6" />
                 ) : (
                   <PiArrowFatLinesRightLight className="size-6" />
                 )}
               </button>
             </div>
-            <div className="text-xs">{video.v_likes.toLocaleString("ru-RU", { notation: "compact" })}</div>
-            <div className="text-xs">{video.v_dislikes.toLocaleString("ru-RU", { notation: "compact" })}</div>
+            <div className="text-xs">{stat.likes.toLocaleString("ru-RU", { notation: "compact" })}</div>
+            <div className="text-xs">{stat.dislikes.toLocaleString("ru-RU", { notation: "compact" })}</div>
           </div>
         </div>
       </div>

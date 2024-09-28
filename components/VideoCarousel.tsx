@@ -12,24 +12,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { useRouter } from "next/navigation";
 
-interface RecommendedProps {
+interface VideoCarouselProps {
   videos: Video[];
 }
 
-export const Recommended: FC<RecommendedProps> = ({ videos }) => {
-  const { refresh } = useRouter();
-
+export const VideoCarousel: FC<VideoCarouselProps> = ({ videos }) => {
   return (
     <div className="relative">
-      <div className="flex items-center justify-between gap-4">
-        <h2 className="mb-2 text-xl font-medium">Рекомендации</h2>
-
-        <Button type="button" onClick={refresh}>
-          Обновить
-        </Button>
-      </div>
       <Swiper
         className="!pb-9"
         modules={[Navigation, Pagination, A11y]}
