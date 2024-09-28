@@ -1,4 +1,5 @@
-﻿using RecSysConverter.LogsConvert;
+﻿using RecSysConverter.ExtendedFeatureVector;
+using RecSysConverter.LogsConvert;
 using RecSysConverter.TrainSet;
 using ZeroLevel;
 
@@ -14,7 +15,8 @@ namespace RecSysConverter
             // await LogsConverter.Convert(BasePath);
             // await VideoStatConverter.Convert(BasePath);
             // await VideoInfoEncoder.Encode();
-            TrainSetBuilder.Build();
+            // TrainSetBuilder.Build();
+            ExtendedVectorBuilder.Build();
         }
     }
 }

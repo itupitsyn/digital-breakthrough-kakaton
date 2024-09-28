@@ -9,27 +9,27 @@ namespace Hencoder.Services.QdrantServices
     {
         private readonly string _collectionName;
         private readonly string _url;
+        private readonly QdrantClient _client;
         public QdrantProxy(string collectionName)
         {
             _collectionName = collectionName;
+            _client = new QdrantClient("localhost", 6334);
         }
 
         public async Task<ulong> GetCollectionPointsCount()
         {
-            using var client = new QdrantClient("localhost", 6334);
-            if (await client.CollectionExistsAsync(_collectionName))
+            if (await _client.CollectionExistsAsync(_collectionName))
             {
-                return (await client.GetCollectionInfoAsync(_collectionName)).PointsCount;
+                return (await _client.GetCollectionInfoAsync(_collectionName)).PointsCount;
             }
             return 0;
         }
 
         public async Task CreateCollection(Distance distance, ulong size)
         {
-            using var client = new QdrantClient("localhost", 6334);
-            if (await client.CollectionExistsAsync(_collectionName) == false)
+            if (await _client.CollectionExistsAsync(_collectionName) == false)
             {
-                await client.CreateCollectionAsync(_collectionName,
+                await _client.CreateCollectionAsync(_collectionName,
                     new VectorParams
                     {
                         Distance = distance,
@@ -40,10 +40,9 @@ namespace Hencoder.Services.QdrantServices
 
         public async Task Upsert(IEnumerable<QPoint> points)
         {
-            using var client = new QdrantClient("localhost", 6334);
-            if (await client.CollectionExistsAsync(_collectionName))
+            if (await _client.CollectionExistsAsync(_collectionName))
             {
-                await client.UpsertAsync(_collectionName, points.Select(p => new PointStruct
+                await _client.UpsertAsync(_collectionName, points.Select(p => new PointStruct
                 {
                     Id = p.Id,
                     Vectors = p.Vector.ToArray(),
@@ -76,10 +75,9 @@ namespace Hencoder.Services.QdrantServices
                 query.Negative.Add(new PointId { Num = (ulong)p });
             }
             var set = new HashSet<long>();
-            using var client = new QdrantClient("localhost", 6334);
-            if (await client.CollectionExistsAsync(_collectionName))
+            if (await _client.CollectionExistsAsync(_collectionName))
             {
-                var points = await client.QueryAsync(
+                var points = await _client.QueryAsync(
                     collectionName: _collectionName,
                     query: query,
                     filter: excludedPointsFilter,
@@ -96,16 +94,16 @@ namespace Hencoder.Services.QdrantServices
 
         public async Task DeleteCollection()
         {
-            using var client = new QdrantClient("localhost", 6334);
-            if (await client.CollectionExistsAsync(_collectionName))
+            if (await _client.CollectionExistsAsync(_collectionName))
             {
-                await client.DeleteCollectionAsync(_collectionName);
+                await _client.DeleteCollectionAsync(_collectionName);
             }
 
         }
 
         public void Dispose()
         {
+            _client.Dispose();
         }
     }
 }

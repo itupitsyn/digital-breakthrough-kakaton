@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <None Update="binary\qdrant.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

@@ -55,7 +55,7 @@ namespace Hencoder.Services.QdrantServices
                 {
                     // 2. Заполнение коллекции
                     var count = Count();
-                    using (var processor = new BatchProcessor<QPoint>(1000, async points => await proxy.Upsert(points)))
+                    using (var processor = new BatchProcessor<QPoint>(1000, points => _qdrantProxy.Upsert(points).Wait()))
                     {
                         foreach (var record in SelectAll())
                         {
