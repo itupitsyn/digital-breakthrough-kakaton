@@ -12,14 +12,18 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { useTransitionContext } from "@/contexts/transitionContext";
+import { Spinner } from "./Spinner";
 
 interface VideoCarouselProps {
   videos: Video[];
 }
 
 export const VideoCarousel: FC<VideoCarouselProps> = ({ videos }) => {
+  const [isPending] = useTransitionContext();
+
   return (
-    <div className="relative">
+    <div className="relative mx-2">
       <Swiper
         className="!pb-9"
         modules={[Navigation, Pagination, A11y]}
@@ -55,7 +59,7 @@ export const VideoCarousel: FC<VideoCarouselProps> = ({ videos }) => {
         pill
         outline
         id="prevEl"
-        className="absolute -left-2 top-1/2 z-[1] hidden size-16 lg:block [&>span]:h-full [&>span]:items-center"
+        className="absolute -left-2 top-1/2 z-[1] hidden size-16 -translate-y-1/2 lg:block [&>span]:h-full [&>span]:items-center"
       >
         <FaChevronLeft />
       </Button>
@@ -63,10 +67,11 @@ export const VideoCarousel: FC<VideoCarouselProps> = ({ videos }) => {
         pill
         outline
         id="nextEl"
-        className="absolute -right-2 top-1/2 z-[1] hidden size-16 lg:block [&>span]:h-full [&>span]:items-center"
+        className="absolute -right-2 top-1/2 z-[1] hidden size-16 -translate-y-1/2 lg:block [&>span]:h-full [&>span]:items-center"
       >
         <FaChevronRight />
       </Button>
+      {isPending && <Spinner className="z-[1]" />}
     </div>
   );
 };
