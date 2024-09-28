@@ -10,10 +10,10 @@ export default async function Home() {
   ]);
 
   return (
-    <main className="mt-10 flex flex-col items-stretch gap-6">
+    <main className="mt-10 flex flex-col items-stretch gap-10">
       <Recommended videos={recommendedResponse.data} />
       <hr className="border-cyan-500" />
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-x-4 gap-y-6">
         {videosResponse.data.map((item) => (
           <VideoCard video={item} key={item.id} />
         ))}

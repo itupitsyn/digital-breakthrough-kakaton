@@ -8,7 +8,7 @@ import { BiSearch } from "react-icons/bi";
 
 export const UltraNavbar: FC = () => {
   return (
-    <Navbar className="[&>div]:gap-2">
+    <Navbar className="sticky top-0 z-10 [&>div]:gap-2">
       <Logo className="size-14" />
       <div className="dark:text-white">Ультравзрывной подбор очка</div>
       <TextInput icon={BiSearch} placeholder="Поиск" className="max-w-[500px] grow" />

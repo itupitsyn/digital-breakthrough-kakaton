@@ -23,7 +23,7 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body className={classNames(inter.className, "dark:bg-gray-800 text-gray-900 dark:text-white")}>
-        <div className="container min-h-svh">
+        <div className="container min-h-svh pb-12">
           <UltraNavbar />
           {children}
         </div>
