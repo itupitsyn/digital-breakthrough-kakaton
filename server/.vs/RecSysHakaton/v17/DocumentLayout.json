@@ -1,0 +1,92 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|c:\\users\\ogoun\\source\\repos\\recsyshakaton\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RecSys.cs",
+              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAADgv4QAAAB7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T20:21:42.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Program.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Program.cs",
+              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Program.cs",
+              "RelativeToolTip": "Hencoder\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T20:08:34.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "QdrantRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAmwFoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T20:07:19.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QdrantProxy.cs",
+              "DocumentMoniker": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ToolTip": "C:\\Users\\Ogoun\\source\\repos\\RecSysHakaton\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T19:59:43.628Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
