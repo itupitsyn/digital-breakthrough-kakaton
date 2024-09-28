@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import { ThemeModeScript } from "flowbite-react";
 import "./globals.css";
 import classNames from "classnames";
-import { UltraNavbar } from "../components/UltraNavbar";
+import { ClientLayout } from "@/components/ClientLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,10 +23,7 @@ export default function RootLayout({
         <ThemeModeScript />
       </head>
       <body className={classNames(inter.className, "dark:bg-gray-800 text-gray-900 dark:text-white")}>
-        <div className="container min-h-svh pb-12">
-          <UltraNavbar />
-          {children}
-        </div>
+        <ClientLayout>{children}</ClientLayout>
       </body>
     </html>
   );
