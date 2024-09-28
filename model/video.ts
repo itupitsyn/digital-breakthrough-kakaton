@@ -1,8 +1,12 @@
 export type Video = {
-  id: string;
-  name: string;
+  video_id: number;
+  title: string;
   description?: string;
-  preview: string;
-  date: number;
-  state: "like" | "dislike" | null;
+  category: string;
+  v_pub_datetime: number;
+  preview?: string;
+  state?: "like" | "dislike";
+  v_likes: number;
+  v_dislikes: number;
+  v_duration: number;
 };

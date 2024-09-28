@@ -1,17 +1,21 @@
 import { Video } from "@/model/video";
 import { faker } from "@faker-js/faker";
 
-export const getRandomVideos = (number: number) => {
+export const getRandomVideos = (count: number) => {
   const data: Video[] = [];
-  const states: ("like" | "dislike" | null)[] = ["like", "dislike", null];
-  for (let i = 0; i < number; i += 1) {
+  const states: ("like" | "dislike")[] = ["like", "dislike"];
+  for (let i = 0; i < count; i += 1) {
     const randomObj: Video = {
-      id: faker.string.alphanumeric({ length: 25 }),
-      name: faker.word.words({ count: Math.ceil(Math.random() * 10) }),
+      video_id: faker.number.int(),
+      title: faker.word.words({ count: Math.ceil(Math.random() * 10) }),
       description: faker.lorem.paragraph(),
       preview: faker.image.urlLoremFlickr(),
-      date: faker.date.past().valueOf(),
-      state: states[Math.floor(Math.random() * 3)],
+      category: faker.word.words({ count: Math.ceil(Math.random() * 3) }),
+      v_pub_datetime: faker.date.past().valueOf(),
+      v_likes: faker.number.int(),
+      v_dislikes: faker.number.int(),
+      v_duration: faker.number.int({ max: 36000 }),
+      state: states[Math.floor(Math.random() * 2)],
     };
 
     data.push(randomObj);

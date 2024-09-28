@@ -21,6 +21,7 @@ export const Recommended: FC<RecommendedProps> = ({ videos }) => {
     <div className="relative">
       <div className="mb-2 text-xl font-medium">Рекомендации</div>
       <Swiper
+        className="!pb-9"
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={16}
         slidesPerView={1}
@@ -39,10 +40,13 @@ export const Recommended: FC<RecommendedProps> = ({ videos }) => {
           nextEl: "#nextEl",
           prevEl: "#prevEl",
         }}
-        pagination={{ clickable: true, bulletActiveClass: "swiper-pagination-bullet-active !bg-cyan-500" }}
+        pagination={{
+          clickable: true,
+          bulletActiveClass: "swiper-pagination-bullet-active !bg-cyan-500",
+        }}
       >
         {videos.map((item) => (
-          <SwiperSlide key={item.id}>
+          <SwiperSlide key={item.video_id} className="!h-auto">
             <VideoCard video={item} />
           </SwiperSlide>
         ))}
