@@ -1,7 +1,7 @@
 "use server";
 
 import { RecommendedHeader } from "@/components/RecommendedHeader";
-import { VideoCarousel } from "@/components/VideoCarousel";
+// import { VideoCarousel } from "@/components/VideoCarousel";
 import { VideoGrid } from "@/components/VideoGrid";
 import { TOKEN_API_HEADER, TOKEN_COOKIES } from "@/constants/token";
 import { Video } from "@/model/video";
