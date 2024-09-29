@@ -64,9 +64,9 @@ export const VideoCard: FC<VideoCardProps> = ({ video }) => {
       await axios.post(`/api/videos/${video.video_id}/skip`);
 
       setStat((prev) => {
-        if (videoState === "skip") return prev;
+        if (videoState === "skip" || !videoState) return prev;
         else if (videoState === "like") return { likes: prev.likes - 1, dislikes: prev.dislikes };
-        return { likes: prev.likes, dislikes: prev.dislikes - 1 };
+        else return { likes: prev.likes, dislikes: prev.dislikes - 1 };
       });
       setVideoState("skip");
     } catch {
