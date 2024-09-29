@@ -5,7 +5,7 @@ using ZeroLevel.Services.Collections;
 
 namespace Hencoder.Services.QdrantServices
 {
-    public class vectors
+    public class ExtendedVectors
     {
         public long video_id { get; set; }
         public byte[] vector { get; set; }
@@ -20,12 +20,11 @@ namespace Hencoder.Services.QdrantServices
     public record QdrantFillResult(ulong PrevRecordsCount, ulong CurrentRecordsCount, long RecordsCount, QdrantResult Result);
 
     public sealed class QdrantRepository
-        : BaseSqliteDB<vectors>
+        : BaseSqliteDB<ExtendedVectors>
     {
-        private const int VECTOR_SIZE = 312;
         private readonly QdrantProxy _qdrantProxy;
-        public QdrantRepository(string collectionName)
-            : base("video_emb")
+        public QdrantRepository(string collectionName, string dbName)
+            : base(dbName)
         {
             _qdrantProxy = new QdrantProxy(collectionName);
         }
@@ -42,6 +41,7 @@ namespace Hencoder.Services.QdrantServices
                 currentRecordsCount = 0;
                 await _qdrantProxy.DeleteCollection();
                 // 1. Создание коллекции
+                var VECTOR_SIZE = (ulong)(Query("SELECT vector FROM ExtendedVectors LIMIT 1").FirstOrDefault()?.vector?.Length ?? (312 * 4)) / 4;
                 try
                 {
                     await _qdrantProxy.CreateCollection(Distance.Cosine, VECTOR_SIZE);
@@ -57,9 +57,9 @@ namespace Hencoder.Services.QdrantServices
                     var count = Count();
                     using (var processor = new BatchProcessor<QPoint>(1000, points => _qdrantProxy.Upsert(points).Wait()))
                     {
-                        foreach (var record in SelectAll())
+                        foreach (var record in Query("SELECT video_id, vector FROM ExtendedVectors"))
                         {
-                            var embedding = new float[312];
+                            var embedding = new float[VECTOR_SIZE];
                             for (int i = 0; i < embedding.Length; i++)
                             {
                                 embedding[i] = BitConverter.ToSingle(record.vector, i * 4);

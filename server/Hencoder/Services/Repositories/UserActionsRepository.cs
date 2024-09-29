@@ -5,10 +5,10 @@ namespace Hencoder.Services.Repositories
     /// <summary>
     /// Показанные пользователю записи
     /// </summary>
-    public class ShowedRepository
+    public class UserActionsRepository
         : BaseSqliteDB<RSUserAction>
     {
-        public ShowedRepository() : base("showed")
+        public UserActionsRepository() : base("showed")
         {
             CreateTable();
         }

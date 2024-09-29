@@ -55,11 +55,6 @@ namespace Hencoder.Services.Repositories
             return _db.Table<T>().Where(predicate);
         }
 
-        public IEnumerable<T> SelectLimitBy(int count, Expression<Func<T, bool>> predicate)
-        {
-            return _db.Table<T>().Where(predicate);
-        }
-
         public T Single(Expression<Func<T, bool>> predicate)
         {
             return _db.Table<T>().FirstOrDefault(predicate);

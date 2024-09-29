@@ -11,6 +11,11 @@ namespace Hencoder.Services.RecomendationSystem
         public long VideosCount { get; set; }
     }
 
+    public class VIDEO
+    {
+        public long video_id { get; set; }
+    }
+
     public class RecSys
     {
         /// <summary>
@@ -20,7 +25,7 @@ namespace Hencoder.Services.RecomendationSystem
         /// <summary>
         /// Просмотренные пользователем записи
         /// </summary>
-        private static ShowedRepository _userActionsRepository = new ShowedRepository();
+        private static UserActionsRepository _userActionsRepository = new UserActionsRepository();
         /// <summary>
         /// Пользователи рекомендательной системы
         /// </summary>
@@ -120,10 +125,6 @@ namespace Hencoder.Services.RecomendationSystem
             return Enumerable.Empty<VideoStatEntry>();
         }
 
-        public class VIDEO
-        {
-            public long video_id { get; set; }
-        }
         private async Task<IEnumerable<VideoStatEntry>> Search(long userId, long[] excluded, long[] positive, long[] negative)
         {
             if (positive.Length == 0)
