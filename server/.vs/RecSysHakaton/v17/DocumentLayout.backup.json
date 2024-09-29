@@ -3,44 +3,80 @@
   "WorkspaceRootPath": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\videostatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\videostatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\recsysusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\recsysusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\showedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\showedrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\authmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\authmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\rsuseraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\rsuseraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\rsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\rsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\config.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\config.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\basesqlitedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\basesqlitedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\responces\\autocoderesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\responces\\autocoderesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\recsys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\hencoder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\hencoder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\models\\videostatentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\models\\videostatentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\models\\uuid2identry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\models\\uuid2identry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\videostatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\videostatrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\uuid2longcachee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\uuid2longcachee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\authmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\authmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\useractionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\useractionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\rsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\rsuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\recomendationsystem\\rsuseraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\recomendationsystem\\rsuseraction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\operationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,26 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\timestamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\timestamp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\config.ini||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\config.ini||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\hencoder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\hencoder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{27000D8D-C40B-4F4A-9554-553890C8EFE3}|Hencoder\\Hencoder.csproj|solutionrelative:hencoder\\services\\qdrantservices\\qdrantproxy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6848F2B4-FCC9-43D2-870D-4B98F866997B}|RecSysConverter\\RecSysConverter.csproj|f:\\documents\\github\\digital-breakthrough-kakaton\\server\\recsysconverter\\extendedfeaturevector\\extendedvectors.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -118,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 18,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,7 +142,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
+              "Title": "AutoCodeResponse.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Responces\\AutoCodeResponse.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Responces\\AutoCodeResponse.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Responces\\AutoCodeResponse.cs",
+              "RelativeToolTip": "Hencoder\\Responces\\AutoCodeResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T03:36:54.007Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "RSUserAction.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RSUserAction.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RSUserAction.cs",
@@ -134,18 +163,17 @@
               "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RSUserAction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:50.633Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:50.633Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 16,
               "Title": "RSUser.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RSUser.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RSUser.cs",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RSUser.cs",
               "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RSUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T03:22:40.039Z",
               "EditorCaption": ""
@@ -158,14 +186,14 @@
               "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\RecSysUsersRepository.cs",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\RecSysUsersRepository.cs",
               "RelativeToolTip": "Hencoder\\Services\\Repositories\\RecSysUsersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T03:22:31.621Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 18,
               "Title": "IRepository.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\IRepository.cs",
@@ -173,25 +201,23 @@
               "RelativeToolTip": "Hencoder\\Services\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:30.164Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:30.164Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ShowedRepository.cs",
-              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\ShowedRepository.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\ShowedRepository.cs",
-              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\ShowedRepository.cs",
-              "RelativeToolTip": "Hencoder\\Services\\Repositories\\ShowedRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAPAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "UserActionsRepository.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\UserActionsRepository.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\UserActionsRepository.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\UserActionsRepository.cs",
+              "RelativeToolTip": "Hencoder\\Services\\Repositories\\UserActionsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:22.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:22.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "UUID2LongCachee.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\UUID2LongCachee.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\UUID2LongCachee.cs",
@@ -199,12 +225,11 @@
               "RelativeToolTip": "Hencoder\\Services\\Repositories\\UUID2LongCachee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:21.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:21.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 13,
               "Title": "VideoStatRepository.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\VideoStatRepository.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\VideoStatRepository.cs",
@@ -212,25 +237,24 @@
               "RelativeToolTip": "Hencoder\\Services\\Repositories\\VideoStatRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:18.9Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:18.9Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "AuthMiddleware.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\AuthMiddleware.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\AuthMiddleware.cs",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\AuthMiddleware.cs",
               "RelativeToolTip": "Hencoder\\Services\\AuthMiddleware.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T03:22:14.658Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "OperationContext.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\OperationContext.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\OperationContext.cs",
@@ -238,12 +262,11 @@
               "RelativeToolTip": "Hencoder\\Services\\OperationContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:13.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:13.222Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "Timestamp.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Timestamp.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\Timestamp.cs",
@@ -251,64 +274,138 @@
               "RelativeToolTip": "Hencoder\\Services\\Timestamp.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T03:22:11.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:22:11.538Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Hencoder",
+              "DocumentIndex": 9,
+              "Title": "Hencoder.csproj",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Hencoder.csproj",
               "RelativeDocumentMoniker": "Hencoder\\Hencoder.csproj",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Hencoder.csproj",
               "RelativeToolTip": "Hencoder\\Hencoder.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-09-29T03:19:26.875Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T03:19:26.875Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "config.ini",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\config.ini",
               "RelativeDocumentMoniker": "Hencoder\\config.ini",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\config.ini",
               "RelativeToolTip": "Hencoder\\config.ini",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002768|",
               "WhenOpened": "2024-09-29T03:19:48.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "BaseSqliteDB.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\BaseSqliteDB.cs",
               "RelativeDocumentMoniker": "Hencoder\\Services\\Repositories\\BaseSqliteDB.cs",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\Repositories\\BaseSqliteDB.cs",
               "RelativeToolTip": "Hencoder\\Services\\Repositories\\BaseSqliteDB.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-29T02:35:18.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Program.cs",
               "RelativeDocumentMoniker": "Hencoder\\Program.cs",
               "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Program.cs",
               "RelativeToolTip": "Hencoder\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T02:28:51.649Z",
+              "WhenOpened": "2024-09-29T02:28:51.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RecSys.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAiwIsAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:56:28.11Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 0,
+              "Title": "QdrantRepository.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs*",
+              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs*",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAuwDkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:57:24.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "QdrantProxy.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T22:57:15.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Uuid2IdEntry.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Models\\Uuid2IdEntry.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Models\\Uuid2IdEntry.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Models\\Uuid2IdEntry.cs",
+              "RelativeToolTip": "Hencoder\\Models\\Uuid2IdEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T03:36:58.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "VideoStatEntry.cs",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Models\\VideoStatEntry.cs",
+              "RelativeDocumentMoniker": "Hencoder\\Models\\VideoStatEntry.cs",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Models\\VideoStatEntry.cs",
+              "RelativeToolTip": "Hencoder\\Models\\VideoStatEntry.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T03:36:59.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Hencoder\\Properties\\launchSettings.json",
+              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Hencoder\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-29T03:41:26.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "vectors.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\ExtendedFeatureVector\\vectors.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\ExtendedFeatureVector\\vectors.cs",
@@ -316,51 +413,11 @@
               "RelativeToolTip": "RecSysConverter\\ExtendedFeatureVector\\vectors.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:58:26.494Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:58:26.494Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "QdrantRepository.cs",
-              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBoAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:57:24.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "QdrantProxy.cs",
-              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "RelativeToolTip": "Hencoder\\Services\\QdrantServices\\QdrantProxy.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAcwF0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:57:15.928Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RecSys.cs",
-              "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "RelativeDocumentMoniker": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "ToolTip": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "RelativeToolTip": "Hencoder\\Services\\RecomendationSystem\\RecSys.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:56:28.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ExtendedVectorBuilder.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\ExtendedFeatureVector\\ExtendedVectorBuilder.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\ExtendedFeatureVector\\ExtendedVectorBuilder.cs",
@@ -368,12 +425,11 @@
               "RelativeToolTip": "RecSysConverter\\ExtendedFeatureVector\\ExtendedVectorBuilder.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAowFYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:49:24.817Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:49:24.817Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "VideoStatEntry.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\VideoStatsConvert\\VideoStatEntry.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\VideoStatsConvert\\VideoStatEntry.cs",
@@ -381,12 +437,11 @@
               "RelativeToolTip": "RecSysConverter\\VideoStatsConvert\\VideoStatEntry.cs",
               "ViewState": "AgIAACQAAAAAAAAAAIA7wCkAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T23:05:01.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T23:05:01.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "ExtendedVectors.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\ExtendedFeatureVector\\ExtendedVectors.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\ExtendedFeatureVector\\ExtendedVectors.cs",
@@ -394,12 +449,11 @@
               "RelativeToolTip": "RecSysConverter\\ExtendedFeatureVector\\ExtendedVectors.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:51:31.216Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:51:31.216Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "BertVectorRepository.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\ExtendedFeatureVector\\BertVectorRepository.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\ExtendedFeatureVector\\BertVectorRepository.cs",
@@ -407,12 +461,11 @@
               "RelativeToolTip": "RecSysConverter\\ExtendedFeatureVector\\BertVectorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:59:05.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:59:05.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 28,
               "Title": "VideoStatConverter.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
@@ -420,12 +473,11 @@
               "RelativeToolTip": "RecSysConverter\\VideoStatsConvert\\VideoStatConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:55:40.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:55:40.968Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 27,
               "Title": "VideoInfoEncoder.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\VideoEncoder\\VideoInfoEncoder.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\VideoEncoder\\VideoInfoEncoder.cs",
@@ -433,12 +485,11 @@
               "RelativeToolTip": "RecSysConverter\\VideoEncoder\\VideoInfoEncoder.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:55:25.532Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:55:25.532Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 29,
               "Title": "Encoder.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\VideoEncoder\\Encoder.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\VideoEncoder\\Encoder.cs",
@@ -446,12 +497,11 @@
               "RelativeToolTip": "RecSysConverter\\VideoEncoder\\Encoder.cs",
               "ViewState": "AgIAADUAAAAAAAAAAAAuwFQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:55:15.474Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:55:15.474Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "ExtendedVectorRepository.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\ExtendedFeatureVector\\ExtendedVectorRepository.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\ExtendedFeatureVector\\ExtendedVectorRepository.cs",
@@ -459,12 +509,11 @@
               "RelativeToolTip": "RecSysConverter\\ExtendedFeatureVector\\ExtendedVectorRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:53:01.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:53:01.41Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 30,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Documents\\GitHub\\digital-breakthrough-kakaton\\server\\RecSysConverter\\Program.cs",
               "RelativeDocumentMoniker": "RecSysConverter\\Program.cs",
@@ -472,8 +521,7 @@
               "RelativeToolTip": "RecSysConverter\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T22:50:12.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T22:50:12.397Z"
             }
           ]
         }

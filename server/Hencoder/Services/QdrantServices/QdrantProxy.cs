@@ -64,26 +64,10 @@ namespace Hencoder.Services.QdrantServices
                 excludedPointsFilter = new Filter();
                 excludedPointsFilter.MustNot.Add(condition);
             }
-
-            var query = new RecommendInput { Strategy = RecommendStrategy.BestScore };
-            foreach (var p in positivePoints)
-            {
-                query.Positive.Add(new PointId { Num = (ulong)p });
-            }
-            foreach (var p in negativePoints)
-            {
-                query.Negative.Add(new PointId { Num = (ulong)p });
-            }
             var set = new HashSet<long>();
             if (await _client.CollectionExistsAsync(_collectionName))
             {
-                var points = await _client.QueryAsync(
-                    collectionName: _collectionName,
-                    query: query,
-                    filter: excludedPointsFilter,
-                    limit: N,
-                    scoreThreshold: scoreThresholdValue
-                );                
+                var points = await _client.RecommendAsync(_collectionName, positive: positivePoints.Select(p => (ulong)p).ToArray(), negative: negativePoints.Select(p => (ulong)p).ToArray(), limit: N, filter: excludedPointsFilter, strategy: RecommendStrategy.AverageVector);
                 foreach (var point in points)
                 {
                     set.Add((long)point.Id.Num);

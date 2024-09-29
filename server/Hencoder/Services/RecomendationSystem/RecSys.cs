@@ -137,10 +137,14 @@ namespace Hencoder.Services.RecomendationSystem
             }
             try
             {
-                var recommendedVideos = (await _qdrantRepository.Recommend(10, 0.6f, positive, negative, excluded)).ToArray();
+                var recommendedVideos = (await _qdrantRepository.Recommend(10, 0.0f, positive, negative, excluded)).ToArray();
                 if (recommendedVideos != null && recommendedVideos.Length == 10)
                 {
                     return _videoSource.Query(string.Format(QUERY, string.Join(", ", recommendedVideos)));
+                }
+                else
+                {
+                    Log.Warning($"[RecSys.Search] Qdrant search fault. Found {recommendedVideos?.Length??0} recomendations. Use sqlite.");
                 }
             }
             catch (Exception ex)

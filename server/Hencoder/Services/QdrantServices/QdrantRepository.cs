@@ -5,10 +5,40 @@ using ZeroLevel.Services.Collections;
 
 namespace Hencoder.Services.QdrantServices
 {
-    public class ExtendedVectors
+    internal class ExtendedVectors
     {
         public long video_id { get; set; }
         public byte[] vector { get; set; }
+    }
+
+    internal class vectors
+    {
+        public long video_id { get; set; }
+        public byte[] vector { get; set; }
+    }
+
+    internal class SmallVectorRepository
+        : BaseSqliteDB<vectors>
+    {
+        public SmallVectorRepository(string name) : base(name)
+        {
+        }
+
+        protected override void DisposeStorageData()
+        {
+        }
+    }
+
+    internal class ExtendedVectorsRepository
+        : BaseSqliteDB<ExtendedVectors>
+    {
+        public ExtendedVectorsRepository(string name) : base(name)
+        {
+        }
+
+        protected override void DisposeStorageData()
+        {
+        }
     }
 
     public enum QdrantResult
@@ -20,14 +50,49 @@ namespace Hencoder.Services.QdrantServices
     public record QdrantFillResult(ulong PrevRecordsCount, ulong CurrentRecordsCount, long RecordsCount, QdrantResult Result);
 
     public sealed class QdrantRepository
-        : BaseSqliteDB<ExtendedVectors>
     {
         private readonly QdrantProxy _qdrantProxy;
+        private readonly SmallVectorRepository smallVectorRepository = null;
+        private readonly ExtendedVectorsRepository extendedVectorsRepository = null;
         public QdrantRepository(string collectionName, string dbName)
-            : base(dbName)
         {
+            if (dbName.StartsWith("small"))
+            {
+                smallVectorRepository = new SmallVectorRepository(dbName);
+            }
+            else
+            {
+                extendedVectorsRepository = new ExtendedVectorsRepository(dbName);
+            }
             _qdrantProxy = new QdrantProxy(collectionName);
         }
+
+        private ulong GetVectorSize()
+        {
+            if (smallVectorRepository != null)
+            {
+                return (ulong)(smallVectorRepository.Query("SELECT vector FROM vectors LIMIT 1").FirstOrDefault()?.vector?.Length ?? (312 * 4)) / 4;
+            }
+            else if (extendedVectorsRepository != null)
+            {
+                return (ulong)(extendedVectorsRepository.Query("SELECT vector FROM ExtendedVectors LIMIT 1").FirstOrDefault()?.vector?.Length ?? (312 * 4)) / 4;
+            }
+            return 312;
+        }
+
+        private ulong GetCount()
+        {
+            if (smallVectorRepository != null)
+            {
+                return (ulong)smallVectorRepository.Count();
+            }
+            else if (extendedVectorsRepository != null)
+            {
+                return (ulong)extendedVectorsRepository.Count();
+            }
+            return 312;
+        }
+
 
         public async Task<QdrantFillResult> Fill()
         {
@@ -41,7 +106,7 @@ namespace Hencoder.Services.QdrantServices
                 currentRecordsCount = 0;
                 await _qdrantProxy.DeleteCollection();
                 // 1. Создание коллекции
-                var VECTOR_SIZE = (ulong)(Query("SELECT vector FROM ExtendedVectors LIMIT 1").FirstOrDefault()?.vector?.Length ?? (312 * 4)) / 4;
+                var VECTOR_SIZE = GetVectorSize();
                 try
                 {
                     await _qdrantProxy.CreateCollection(Distance.Cosine, VECTOR_SIZE);
@@ -54,22 +119,42 @@ namespace Hencoder.Services.QdrantServices
                 try
                 {
                     // 2. Заполнение коллекции
-                    var count = Count();
+                    var count = GetCount();
                     using (var processor = new BatchProcessor<QPoint>(1000, points => _qdrantProxy.Upsert(points).Wait()))
                     {
-                        foreach (var record in Query("SELECT video_id, vector FROM ExtendedVectors"))
+                        if (smallVectorRepository != null)
                         {
-                            var embedding = new float[VECTOR_SIZE];
-                            for (int i = 0; i < embedding.Length; i++)
+                            foreach (var record in smallVectorRepository.Query("SELECT video_id, vector FROM ExtendedVectors"))
                             {
-                                embedding[i] = BitConverter.ToSingle(record.vector, i * 4);
+                                var embedding = new float[VECTOR_SIZE];
+                                for (int i = 0; i < embedding.Length; i++)
+                                {
+                                    embedding[i] = BitConverter.ToSingle(record.vector, i * 4);
+                                }
+                                total++;
+                                if (total % 5000 == 0)
+                                {
+                                    Log.Info($"[Qdrant.Fill] Proceed {total} / {count}");
+                                }
+                                processor.Add(new QPoint { Id = (ulong)record.video_id, Vector = embedding });
                             }
-                            total++;
-                            if (total % 5000 == 0)
+                        }
+                        else if (extendedVectorsRepository != null)
+                        {
+                            foreach (var record in extendedVectorsRepository.Query("SELECT video_id, vector FROM ExtendedVectors"))
                             {
-                                Log.Info($"[Qdrant.Fill] Proceed {total} / {count}");
+                                var embedding = new float[VECTOR_SIZE];
+                                for (int i = 0; i < embedding.Length; i++)
+                                {
+                                    embedding[i] = BitConverter.ToSingle(record.vector, i * 4);
+                                }
+                                total++;
+                                if (total % 5000 == 0)
+                                {
+                                    Log.Info($"[Qdrant.Fill] Proceed {total} / {count}");
+                                }
+                                processor.Add(new QPoint { Id = (ulong)record.video_id, Vector = embedding });
                             }
-                            processor.Add(new QPoint { Id = (ulong)record.video_id, Vector = embedding });
                         }
                     }
                 }
@@ -87,10 +172,6 @@ namespace Hencoder.Services.QdrantServices
         public Task<IEnumerable<long>> Recommend(ulong N, float scoreThreshold, IEnumerable<long> positivePoints, IEnumerable<long> negativePoints, IEnumerable<long> notAllowedPoints = null)
         {
             return _qdrantProxy.Recommend(N, scoreThreshold, positivePoints, negativePoints, notAllowedPoints);
-        }
-
-        protected override void DisposeStorageData()
-        {
         }
     }
 }
