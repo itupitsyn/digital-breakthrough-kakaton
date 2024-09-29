@@ -1,5 +1,6 @@
 "use server";
 
+import { Dummy } from "@/components/Dummy";
 import { RecommendedHeader } from "@/components/RecommendedHeader";
 // import { VideoCarousel } from "@/components/VideoCarousel";
 import { VideoGrid } from "@/components/VideoGrid";
@@ -38,7 +39,7 @@ export default async function Home() {
           <VideoGrid videos={recVideos} />
         </>
       ) : (
-        <div className="flex justify-center text-2xl font-bold">Сначала залогиньтесь</div>
+        <Dummy />
       )}
     </main>
   );
