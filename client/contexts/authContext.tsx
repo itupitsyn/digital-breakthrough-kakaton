@@ -12,6 +12,7 @@ interface AuthContextType {
   isAuth: boolean;
   isAuthenticating: boolean;
   auth: () => void;
+  logout: () => void;
 }
 
 const AuthContext = createContext<AuthContextType>({} as AuthContextType);
@@ -20,7 +21,7 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
   const [isAuth, setIsAuth] = useState(false);
   const [token, setToken] = useState<string>();
   const [isAuthenticating, setIsAuthentiacting] = useState(false);
-  const [isPending, startTransition] = useTransitionContext();
+  const [_, startTransition] = useTransitionContext();
   const { refresh } = useRouter();
   const cookies = useCookies();
 
@@ -45,6 +46,15 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
     }
   }, [cookies, refresh, startTransition]);
 
+  const logout = useCallback(() => {
+    setIsAuth(false);
+    setToken(undefined);
+    setIsAuth(false);
+    setToken(undefined);
+    cookies.remove(TOKEN_COOKIES);
+    startTransition(refresh);
+  }, [cookies, refresh, startTransition]);
+
   useEffect(() => {
     const res = cookies.get(TOKEN_COOKIES);
     if (res) {
@@ -53,7 +63,19 @@ export const AuthProvider: FC<PropsWithChildren> = ({ children }) => {
     }
   }, [cookies]);
 
-  return <AuthContext.Provider value={{ token, isAuth, auth, isAuthenticating }}>{children}</AuthContext.Provider>;
+  return (
+    <AuthContext.Provider
+      value={{
+        token,
+        isAuth,
+        auth,
+        logout,
+        isAuthenticating,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
 };
 
 export const useAuth = () => {
